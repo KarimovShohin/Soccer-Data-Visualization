@@ -1,0 +1,12 @@
+.app-header {
+    height: 100px;
+    background-color: #132242;
+    font-style: normal;
+    font-weight: normal;
+    /*border-bottom: thin lightgreen solid;*/
+}
+
+.player-info {
+    color: white;
+    font-size: 20px;
+}

@@ -1,0 +1,14 @@
+body {
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #081228;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+        font-family: 'Century Gothic';
+        font-weight:lighter;
+        font-style: lighter;
+        color:white;
+}
