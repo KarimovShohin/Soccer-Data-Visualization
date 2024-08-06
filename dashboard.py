@@ -212,6 +212,7 @@ tab4_content = [
 ]
 #--------------------------------------------Front--------------------------------------------#
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
+server = app.server
 
 ### AppLayout
 app.layout = html.Div([
