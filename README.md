@@ -1,12 +1,12 @@
-The Soccer Data Visualization is an interactive web application designed for visualizing and analyzing data about European Soccer. 
+### The Soccer Data Visualization is an interactive web application designed for visualizing and analyzing data about European Soccer. 
 
 Author: Shohin Karimov
 
-Project objective: The final project for the course "Data Analytics" to demonstrate skills in data analysis and visualization, as well as for the practical application of the acquired knowledge within the course.
+#### Project objective: The final project for the course "Data Analytics" to demonstrate skills in data analysis and visualization, as well as for the practical application of the acquired knowledge within the course.
 
 The project is created using Dash and Plotly, providing users with a convenient interface to obtain information about teams and players.
 
-Functionality:
+#### Functionality:
 First tab - Team Selection:
 - Users can select a team from the list.
 - Team statistics are displayed, including the number of goals scored and conceded in matches.
