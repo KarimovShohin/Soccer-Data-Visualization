@@ -391,14 +391,15 @@ def create_tab1_content(player, year):
            tab2_df_info['PHY'].iloc[0]
         ]
     ))
-    
+
+    birthday_text = f"{tab2_df_info['birthday'].dt.date.iloc[0]} ({year - tab2_df_info['birthday'].dt.year.iloc[0]} years)"
     if not tab2_df_info.empty:
         tab2_info = html.Div([
             dbc.Card(
                 dbc.CardBody([
                     html.H6("Birthday", className="card-title"),
                     html.H6(
-                        f'{tab2_df_info['birthday'].dt.date.iloc[0]} ({year - tab2_df_info['birthday'].dt.year.iloc[0]} years)',
+                        birthday_text,
                         className="card-text"
                     ),
                 ], style={"backgroundColor": "#132242"}), style={'marginBottom':'10px'}
@@ -434,10 +435,6 @@ def create_tab1_content(player, year):
                 ], style={"backgroundColor": "#132242"}), style={'marginBottom':'10px'}
                 
             ),
-            # html.Div(f'Birthday: {tab2_df_info['birthday'].dt.date.iloc[0]}'),
-            # html.Div(f'Height: {str(tab2_df_info['height'].iloc[0])[:7]+' Cm'}'),
-            # html.Div(f'Weight: {str(tab2_df_info['weight'].iloc[0])[:7]+' Kg'}'),
-            # html.Div(f'Pref. Foot: {str(tab2_df_info['preferred_foot'].iloc[0]).title()}'),
         ], className='player-info')
     
         tab2_radar = px.line_polar(
